@@ -1,0 +1,12 @@
+{
+  "name": "Vinted Blocker",
+  "version": "0.0.1",
+  "description": "Block the access to Vinted website. Prefect extension if your girlfriend orders too much",
+  "content_scripts": [
+    {
+      "matches": ["https://www.vinted.be/*", "https://www.vinted.fr/*"],
+      "js": ["background.js"]
+    }
+  ],
+  "manifest_version": 2
+}
