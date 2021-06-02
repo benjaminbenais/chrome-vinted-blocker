@@ -1,6 +1,6 @@
 const blocker = document.createElement('div');
 
-blocker.style.position= 'absolute';
+blocker.style.position = 'absolute';
 blocker.style.top = 0;
 blocker.style.left = 0;
 blocker.style.background = '#ffffff';
@@ -13,7 +13,8 @@ blocker.style.alignItems = 'center';
 blocker.style.zIndex = 999999;
 
 const img = document.createElement('img');
-img.src = 'https://i.pinimg.com/originals/46/5f/85/465f85a75046bc46cb9c879381173714.gif';
+img.src =
+  'https://i.pinimg.com/originals/46/5f/85/465f85a75046bc46cb9c879381173714.gif';
 
 img.style.width = '370px';
 img.style.height = '300px';
@@ -29,7 +30,8 @@ textWrapper.style.textAlign = 'center';
 const line1 = document.createElement('span');
 const line2 = document.createElement('span');
 line1.textContent = 'This website has been blocked for the following reason:';
-line2.textContent = 'It seems you are visiting too frenquently and ordering unecessary items, said Benjamin.';
+line2.textContent =
+  'It seems you are visiting too frenquently and ordering unecessary items 😣';
 
 line1.style.display = 'block';
 line2.style.display = 'block';
@@ -40,5 +42,4 @@ textWrapper.appendChild(line2);
 blocker.appendChild(img);
 blocker.appendChild(textWrapper);
 
-document.body.appendChild(blocker);
-
+document.body.replaceWith(blocker);
